@@ -8,7 +8,7 @@ aprovação dos checks.
 
 | Rota | Método | Resultado |
 |---|---|---|
-| `/` | GET | Identificação da API e versão `1.0.0` |
+| `/` | GET | Identificação da API e versão `1.1.0` |
 | `/saude` | GET | `{"status": "ok"}` |
 | `/tarefas` | GET | Lista de duas tarefas |
 | Qualquer rota ausente | GET | HTTP `404` |
@@ -52,10 +52,7 @@ Verifique no painel se a configuração ficou em **After CI Checks Pass**.
 
 ## Experimento de falha e recuperação
 
-O histórico Git deste projeto inclui um commit com `/saude` devolvendo
-`{"status": "falha"}` e o commit de correção seguinte, que restaura `ok`
-e atualiza a versão para `1.0.0`. Para reproduzir o pipeline vermelho no GitHub,
-consulte `docs/PUBLICACAO_E_EVIDENCIAS.md`.
+O histórico registra a falha controlada em `/saude` e a recuperação na versão `1.1.0`. As execuções podem ser conferidas na guia Actions.
 
 ## Estrutura
 

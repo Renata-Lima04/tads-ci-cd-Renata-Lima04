@@ -17,13 +17,13 @@ TAREFAS = [
 def inicio():
     return jsonify({
         "mensagem": "Laboratório CI/CD TADS",
-        "versao": "1.0.0",
+        "versao": "1.1.0",
     })
 
 
 @app.get("/saude")
 def saude():
-    return jsonify({"status": "falha"})
+    return jsonify({"status": "ok"})
 
 
 @app.get("/tarefas")
