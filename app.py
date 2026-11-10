@@ -23,7 +23,7 @@ def inicio():
 
 @app.get("/saude")
 def saude():
-    return jsonify({"status": "ok"})
+    return jsonify({"status": "falha"})
 
 
 @app.get("/tarefas")
